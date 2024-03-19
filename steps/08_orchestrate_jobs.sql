@@ -10,7 +10,7 @@ Last Updated: 1/9/2023
 
 USE ROLE HOL_ROLE;
 USE WAREHOUSE HOL_WH;
-USE SCHEMA HOL_DB.HARMONIZED;
+USE SCHEMA HOL_DB51.HARMONIZED;
 
 
 -- ----------------------------------------------------------------------------

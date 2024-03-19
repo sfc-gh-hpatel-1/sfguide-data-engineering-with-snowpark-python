@@ -7,7 +7,7 @@ Last Updated: 1/9/2023
 
 USE ROLE HOL_ROLE;
 USE WAREHOUSE HOL_WH;
-USE DATABASE HOL_DB;
+USE DATABASE HOL_DB51;
 
 
 -- ----------------------------------------------------------------------------

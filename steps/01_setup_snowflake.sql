@@ -12,7 +12,7 @@ Last Updated: 1/1/2023
 
 -- See Getting Started section in Third-Party Packages (https://docs.snowflake.com/en/developer-guide/udf/python/udf-python-packages.html#getting-started)
 
-
+-- DON'T DO THIS!
 -- ----------------------------------------------------------------------------
 -- Step #2: Create the account level objects
 -- ----------------------------------------------------------------------------
@@ -36,13 +36,14 @@ GRANT OWNERSHIP ON DATABASE HOL_DB TO ROLE HOL_ROLE;
 CREATE OR REPLACE WAREHOUSE HOL_WH WAREHOUSE_SIZE = XSMALL, AUTO_SUSPEND = 300, AUTO_RESUME= TRUE;
 GRANT OWNERSHIP ON WAREHOUSE HOL_WH TO ROLE HOL_ROLE;
 
-
+--START HERE!
 -- ----------------------------------------------------------------------------
 -- Step #3: Create the database level objects
 -- ----------------------------------------------------------------------------
 USE ROLE HOL_ROLE;
 USE WAREHOUSE HOL_WH;
-USE DATABASE HOL_DB;
+-- Need to update this to your database!!!
+USE DATABASE HOL_DB51;
 
 -- Schemas
 CREATE OR REPLACE SCHEMA EXTERNAL;
